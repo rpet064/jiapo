@@ -23,24 +23,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Montserrat:wght@100;400;700;900&family=Poppins&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
   
   <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="dist/output.css">
   
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
 
 <body>
-  <!-- Landing Page -->
 
-  <section class="" id="landing-page">
-    <div>
-      <img src="./assets/images/1.jpg">
-    </div>
+  <main class="h-full w-full items-center">
+
+  <!-- Landing Page -->
+  <section id="landing-page" class="w-full h-screen">
+    <img
+    src="./assets/images/1.jpg"
+    class="object-cover w-full h-full"
+    alt="Image alt text"
+    />
   </section>
+  <button>
+    Menu
+  </button>
 
   <!-- About -->
 
-  <section class="" id="about">
+  <section class="bg-red-1 bg-meal" id="about">
   </section>
 
 
@@ -58,7 +65,7 @@
   <footer id="footer">
 
     <!-- Restaurant Navigation -->
-    <div class="restaurant-nav">
+    <div id="restaurant-nav">
 
     </div>
 
@@ -68,7 +75,7 @@
     </div>
 
     <!-- Developer Information -->
-    <div class="developer-info">
+    <div id="developer-info" class="bg-red-1">
       <button>
         <a onclick="window.open('https://github.com/rpet064/')" class="fab fa-github"></a>
       </button>
@@ -81,7 +88,7 @@
     </div>
     </footer>
 
-
+  </main>
 </body>
 
 </html>
