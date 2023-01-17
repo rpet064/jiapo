@@ -2,14 +2,15 @@
 module.exports = {
     content: ["./*.{html,js}"],
     mode: 'jit',
-    darkMode: false,
     theme: {
       colors: {
-      "green-1": "#c9e265",
-      "brown-1": "#dbbfa1",
+      "dark-green": "#47886c",
+      "light-green": "#c9e265",
+      "brown": "#dbbfa1",
       "white-1": "#f5f5ef",
-      "gold-1": "#f4c01e",
-      "red-1": "#df5959",
+      "gold": "#f4c01e",
+      "dark-red": "#c52626",
+      "light-red": "#df5959",
       "black": "#000000",
       "white": "#ffffff",
       },
