@@ -38,29 +38,29 @@
   <main class="h-full w-full items-center">
 
   <!-- Landing Page -->
-  <section id="landing-page" class="w-full h-screen">
+  <section id="landing-page" class="w-full h-screen text-center">
     <img
     src="./assets/images/1.jpg"
     class="object-cover w-full h-full absolute"
     alt="Image alt text"
     />
-    <button class="absolute left-12 -mt-4 w-48 h-48" onmousedown="showNavOptions()">
+    <button class="absolute left-12 mt-8 w-64 z-20" onmouseover="showNavOptions('show')">
       <img
         src="./assets/images/4.png"
         class="object-cover w-1/2 h-1/2 transform hover:rotate-90"
         alt="Image alt text"
         />
     </button>
-    <ol>
-      <li><a>Contact Us</a></li>
-      <li>Order Now</li>
+    <ol onmouseleave="showNavOptions('hide')" class="invisible text-white bg-red-800 relative w-24 left-16 rounded-md pt-4 top-32 h-36 z-10 pt-6 font-bold [&_li]:text-black" >
+      <li><a>Contact</a></li>
+      <li>Order</li>
       <li>Menu</li>
       <li>About</li>
     </ol>
-    <div class="absolute bottom-20 right-64">
-      <h1 class="text-8xl text-white-1">Hakka Speciality</h1>
-      <button class="bg-white-1 relative left-48 top-8 rounded-md h-16 w-1/3">
-        <span class="text-2xl text-black-1">Order Now</span>
+    <div class="absolute bottom-20 right-48 font-Hammersmith One">
+      <h1 class="relative text-9xl text-white bottom-12"  >Hakka Speciality</h1>
+      <button class="bg-white absolute left-80 top-24 rounded-md h-16 w-1/4 text-white">
+        <span class="text-2xl text-black">Order Now</span>
       </button>
     </div>
   </section>
@@ -107,8 +107,12 @@
       </button>
     </div>
     <script>
-      function showNavOptions(){
-        alert("It worked");
+      function showNavOptions(navDisplay){
+        if (navDisplay === "show"){
+          $("ol").css("visibility", "visible");
+        } else {
+          $("ol").css("visibility", "hidden");
+        }
       }
       </script>
     </footer>
