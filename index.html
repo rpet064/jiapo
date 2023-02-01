@@ -58,10 +58,10 @@
     onmouseleave="showNavOptions('hide')" 
     class="invisible text-white relative w-28 left-16 rounded-xl top-32 h-44 z-10 p-4 font-bold text-xl" 
     >
-      <li class="cursor-pointer pt-2"><a href="#footer">Contact</a></li>
       <li class="cursor-pointer pt-2"><a href="#about">About</a></li>
       <li class="cursor-pointer pt-2"><a href="#menu">Menu</a></li>
       <li class="cursor-pointer pt-2"><a href="#reviews">Reviews</a></li>
+      <li class="cursor-pointer pt-2"><a href="#footer">Contact</a></li>
     </ol>
     <div class="absolute bottom-20 right-48 font-Hammersmith One">
       <h1 class="relative text-9xl text-white bottom-12">Hakka Speciality</h1>
@@ -105,7 +105,11 @@
     <div class="w-1/4 w-64">
       <p class="text-4xl pb-4 pr-2">Delightful Hakka Flavours</p>
       <p>Sed nec mauris egestas, tincidunt urna nec, vestibulum sem. Aenean et fermentum metus.</p>
-      <button class="bg-red-600 rounded-md w-32 h-16 mt-8 text-white hover:bg-blue-700">Menu</button>
+      <button
+      id="menu-modal-btn"
+      class="bg-red-600 rounded-md w-32 h-16 mt-8 text-white hover:bg-blue-700"
+      onclick="manageModal('show')"
+      >Menu</button>
     </div>
     <div class="w-1/3 space-x-4 pt-12 h-full">
       <img class="pb-6 " src="./assets/images/4.jpg">
@@ -119,11 +123,28 @@
       <img class="pb-6 h-64 w-60" src="./assets/images/6.jpeg">  
       <p><a>Sweet Endings</a></p>
     </div>
+
+    <!-- Menu Modal -->
+    <div id="menu-modal"
+    class="w-full h-full absolute t-60 l-0 r-0 b-0 z-50"
+    >
+      <div
+      id="menu-modal-main"
+      class="w-4/5 p-6 bg-white relative bottom-36 left-20 border-2"
+      >
+        <span 
+          class="float-right text-7xl font-bold pb-5 pr-4 cursor-pointer"
+          onclick="manageModal('close')"
+          >&times;</span>
+        <img  
+        src="./assets/images/7.jpeg">
+      </div>
+    </div>
   </section>
 
   <!-- Reviews -->
 
-  <section id="reviews" class="bg-black w-screen h-screen text-white pt-8">
+  <section id="reviews" class="bg-black w-screen h-screen text-white pt-8 z-0">
     <h1 class="font-Hammersmith One text-7xl p-10">Customer Reviews</h1>
     <div class="flex flex-row w-full">
       <div class="w-1/3 flex flex-column">
@@ -148,7 +169,7 @@
   </section>
 
   <!-- Footer -->
-  <footer id="footer" class="bg-yellow-100 flex flex-row">
+  <footer id="footer" class="bg-yellow-100 flex flex-row pt-4">
 
     <!-- Restaurant Navigation -->
     <div id="restaurant-nav" class="w-1/3">
@@ -222,14 +243,48 @@
 
 
     <script>
+      // This script toggles between showing and hiding the nav bar on the hero page
+      // Mouseover the pork will open the nav menu
+      // Mouseoff the menu or pork will close the menu
       function showNavOptions(navDisplay){
         if (navDisplay === "show"){
-          $("ol").css("visibility", "visible");
+          $("ol").show()
         } else {
-          $("ol").css("visibility", "hidden");
+          $("ol").hide()
         }
       }
       </script>
+      <script>
+        // Clicking on the menu button will open up the modal with the menu on it
+        // Clicking off the modal will close the modal
+        let modalOpen = false
+        function manageModal(modalDisplay){
+          if (modalDisplay === "show"){
+            $("#menu-modal").show()
+            return modalOpen = true
+          } else {
+            $("#menu-modal").hide()
+            modalOpen = false
+            return modalOpen = false
+          }
+        }
+        </script>
+        <script>
+          // Menu is automatically open on load/reload - this function
+          // Will close the modal, so it's not open unless the user clicks on it
+          window.onload = function() {
+            $("#menu-modal").hide() 
+          }
+        </script>
+        <script>
+          $(document).click(function(){
+            if (modalOpen){
+              $("#menu-modal").hide() 
+              alert(modalOpen)
+              return modalOpen = false
+            }
+          })
+        </script>
     </footer>
 
   </main>
