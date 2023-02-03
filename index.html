@@ -41,11 +41,16 @@
 
     <!-- Landing Page -->
     <section id="landing-page" class="w-full h-screen">
+
+      <!-- Logo & Trigger for Navigation Menu -->
       <img src="./assets/images/1.jpg" class="object-cover w-full h-full absolute" alt="Image alt text" />
-      <button id="logo-btn" class="absolute 2xl:left-12 xl:left-12 lg:left-12 md:left-12 sml:left-12 left-8 mt-8 w-64 z-20 ml-3 cursor-none">
+      <button id="logo-btn" class="absolute mt-8 w-64 z-20 ml-3 cursor-none
+      2xl:left-12 xl:left-12 lg:left-12 md:left-12 sml:left-12 left-8">
         <img src="./assets/images/2.png" class="object-cover w-1/2 h-1/2 transform hover:rotate-90 cursor-pointer"
           alt="Image alt text" onmouseover="showNavOptions('show')" onmouseleave="showNavOptions('hide')" />
       </button>
+      
+      <!-- Dropdown Navigation Menu -->
       <ol onmouseover="showNavOptions('show')" onmouseleave="showNavOptions('hide')"
         class="hide text-white relative w-28 2xl:left-16 xl:left-16 lg:left-16 md:left-16 sm:left-12 left-12 rounded-xl top-32 h-44 z-10 p-4 font-bold text-xl">
         <li class="cursor-pointer pt-2"><a href="#about">About</a></li>
@@ -53,25 +58,39 @@
         <li class="cursor-pointer pt-2"><a href="#reviews">Reviews</a></li>
         <li class="cursor-pointer pt-2"><a href="#footer">Contact</a></li>
       </ol>
+
+      <!-- Hero Image Infomation -->
       <div class="absolute bottom-20 font-Hammersmith One">
         <h1 
-        class="relative text-white xl:left-72 lg:left-2/4 md:left-2/4 sm:left-44 left-28 xl:text-9xl lg:text-8xl md:text-7xl text-5xl"
+        class="relative text-white 
+        xl:left-72 lg:left-2/4 md:left-2/4 sm:left-44 left-12 
+        xl:text-9xl lg:text-8xl md:text-7xl text-6xl"
         >Hakka Speciality</h1>
         <button
-          class="bg-white relative lg:left-72 md:left-60 sm:left-40 left-20  top-6 rounded-md w-15rem h-20 h-16 xl-1/4 xl-1/4 sm:w-40 w-2/4 hover:bg-red-700 hover:text-white font-bold text-xl">
-          Order Now
+          onclick="window.open('https://line.me/R/ti/p/@877hucrs')"
+          class="bg-white relative top-6 rounded-md h-20 hover:bg-red-700 hover:text-white font-bold text-xl
+          lg:left-72 md:left-60 sm:left-40 left-10
+          xl:w-1/4 xl:w-1/4 sm:w-40 w-40"
+          >Order Now
         </button>
       </div>
     </section>
 
     <!-- About -->
 
-    <section class="bg-red-1 flex bg-meal flex-row w-full h-screen p-16 border-b-2" id="about">
-      <div class="w-2/5">
-        <img src="./assets/images/3.jpg" alt="Restaurant Photo Was Here" class="4/5 pt-5" />
+    <section id="about" 
+      class="bg-red-1 flex-row bg-meal w-full p-16 border-b-2
+      2xl:flex xl:flex lg:flex md:flex block
+      2xl:h-screen xl:h-screen lg:h-screen block
+      ">
+      <div class="2xl:w-2/5 xl:w-2/5 lg:w-2/5 w-full">
+        <img src="./assets/images/3.jpg" alt="Restaurant Photo Was Here" class="4/5 pt-5"/>
       </div>
-      <div class="pt-1 pl-16 w-3/5">
-        <h1 class="text-7xl pb-14">Story of Jiapo</h1>
+      <div class="pl-16 2xl:w-full xl:w-full lg:w-full md:w-full">
+        <h1 class="pb-14 font-bold 
+        2xl:text-7xl xl:text-7xl lg:text-6xl md:text-6xl text-6xl
+        2xl:pt-1 xl:pt-1 lg:pt-1 pt-10"
+        >Story of Jiapo</h1>
         <p class="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Pellentesque sodales quam purus, ut pharetra elit pellentesque et.
@@ -83,13 +102,15 @@
           Nulla tincidunt lacus tellus, quis eleifend metus venenatis id.
           Vestibulum quis mauris eu nulla porttitor varius.
         </p>
-        <button class="bg-red-600 rounded-md w-32 h-16 mt-8 text-white hover:bg-blue-700">Order Now</button>
+        <button 
+        onclick="window.open('https://line.me/R/ti/p/@877hucrs')"
+        class="bg-red-600 rounded-md w-32 h-16 mt-8 text-white hover:bg-blue-700"
+        >Order Now</button>
       </div>
     </section>
 
 
     <!-- Menu -->
-
     <section class="flex flex-column space-x-10 w-full h-screen p-10 pt-20 border-b-2 pr-2" id="menu">
       <div class="w-1/4 w-64">
         <p class="text-4xl pb-4 pr-2">Delightful Hakka Flavours</p>
