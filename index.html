@@ -81,7 +81,7 @@
     <section id="about" 
       class="bg-red-1 flex-row bg-meal w-full p-16 border-b-2
       2xl:flex xl:flex lg:flex block
-      2xl:h-screen xl:h-screen lg:h-full h-full block
+      2xl:h-screen xl:h-screen lg:h-full p-16 border h-full block
       ">
       <div class="2xl:w-2/5 xl:w-2/5 lg:w-3/5 h-full w-full">
         <img src="./assets/images/3.jpg" alt="Restaurant Photo Was Here" class="4/5 pt-5"/>
@@ -107,24 +107,39 @@
 
 
     <!-- Menu -->
-    <section class="flex flex-column space-x-10 w-full h-screen p-10 pt-20 border-b-2 pr-2" id="menu">
-      <div class="w-1/4 w-64">
-        <p class="text-4xl pb-4 pr-2">Delightful Hakka Flavours</p>
-        <p>Sed nec mauris egestas, tincidunt urna nec, vestibulum sem. Aenean et fermentum metus.</p>
-        <button id="menu-modal-btn" class="bg-red-600 rounded-md w-32 h-16 mt-8 text-white hover:bg-blue-700"
-          onclick="manageModal('show')">Menu</button>
+    <section 
+    class="flex-row space-x-10 w-full p-10 pt-20 border-b-2 pr-2
+      xl:flex lg:flex md:flex block xl:h-screen lg:h-screen md:h-screen h-full" 
+      id="menu">
+      <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 w-full flex flex-row">
+        <div 
+        class="xl:w-72 lg:w-60 md:w-48 pr-10 w-full">
+          <p class="text-4xl pb-4 pr-2">Delightful Hakka Flavours</p>
+          <p>Sed nec mauris egestas, tincidunt urna nec, vestibulum sem. Aenean et fermentum metus.</p>
+          <button id="menu-modal-btn" class="bg-red-600 rounded-md w-32 h-16 mt-8 text-white hover:bg-blue-700"
+            onclick="manageModal('show')">Menu</button>
+        </div>
+        <div class="pt-10 pr-10">
+          <img class="pb-6 
+          xl:w-72 lg:w-72 md:w-72 w-1/2 w-full" 
+          src="./assets/images/4.jpg">
+          <p class="pr-6"><a>Mouthwatering Appertisers</a></p>
+        </div>
       </div>
-      <div class="w-1/3 space-x-4 pt-12 h-full">
-        <img class="pb-6 " src="./assets/images/4.jpg">
-        <p class="pr-6"><a>Mouthwatering Appertisers</a></p>
-      </div>
-      <div class="w-1/3 space-x-4 pt-12 w-60">
-        <img class="pb-6" src="./assets/images/5.jpeg">
-        <p><a>Wholesome Mains</a></p>
-      </div>
-      <div class="w-1/3 space-x-4 pt-12">
-        <img class="pb-6 h-64 w-60" src="./assets/images/6.jpeg">
-        <p><a>Sweet Endings</a></p>
+      <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 w-full flex flex-row">
+        <div class="pt-10 pr-10">
+          <img class="pb-6
+          xl:w-72 lg:w-72 md:w-72 w-1/2 w-full" 
+          src="./assets/images/5.jpeg">
+          <p><a>Wholesome Mains</a></p>
+        </div>
+        <div class="pt-10 pl-10">
+          <img class="pb-6 w-60
+          xl:h-60 lg:h-56 md:h-48 h-full
+          xl:w-55 lg:w-56 md:w-56 w-full" 
+          src="./assets/images/6.jpeg">
+          <p><a>Sweet Endings</a></p>
+        </div>
       </div>
 
       <!-- Menu Modal -->
