@@ -108,37 +108,41 @@
 
     <!-- Menu -->
     <section 
-    class="flex-row space-x-10 w-full p-10 pt-20 border-b-2 pr-2
-      xl:flex lg:flex md:flex block xl:h-screen lg:h-screen md:h-screen h-full" 
+    class="flex-row space-x-10 w-full border-b-2 pr-2
+      xl:flex lg:flex block xl:h-screen lg:h-screen h-full
+      2xl:p-10 xl:p-10 lg:p-10 md:p-10 sm:bg-red-400 bg-red-500" 
       id="menu">
-      <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 w-full flex flex-row">
+      <div class="xl:w-1/2 lg:w-1/2 w-full flex flex-row sm:p-5 p-5 xl:pt-10 lg:pt-10 md:pt-10 sm:pt-10 pt-16">
         <div 
-        class="xl:w-72 lg:w-60 md:w-48 pr-10 w-full">
+        class="xl:w-72 lg:w-60 pr-10 w-1/2 xl:pt-0 
+          lg:pt-0 md:pt-7 sm:pt-5">
           <p class="text-4xl pb-4 pr-2">Delightful Hakka Flavours</p>
           <p>Sed nec mauris egestas, tincidunt urna nec, vestibulum sem. Aenean et fermentum metus.</p>
           <button id="menu-modal-btn" class="bg-red-600 rounded-md w-32 h-16 mt-8 text-white hover:bg-blue-700"
             onclick="manageModal('show')">Menu</button>
         </div>
-        <div class="pt-10 pr-10">
+        <div class="xl:pt-10 xl:pr-10 lg:pt-10 lg:pr-10 w-1/2">
           <img class="pb-6 
-          xl:w-72 lg:w-72 md:w-72 w-1/2 w-full" 
+          xl:w-72 lg:w-72 lg:h-56 h-3/4" 
           src="./assets/images/4.jpg">
           <p class="pr-6"><a>Mouthwatering Appertisers</a></p>
         </div>
       </div>
-      <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 w-full flex flex-row">
-        <div class="pt-10 pr-10">
+      <div class="xl:w-1/2 lg:w-1/2 w-full flex flex-row 
+      xl:pr-10 lg:pr-0 pt-10">
+        <div class="xl:pt-10 xl:pr-10 lg:pt-10 lg:pr-10 w-1/2">
           <img class="pb-6
-          xl:w-72 lg:w-72 md:w-72 w-1/2 w-full" 
+          xl:w-72 lg:w-72 md:w-72 sm:w-68 w-64 xl:h-60 lg:h-56 h-72" 
           src="./assets/images/5.jpeg">
-          <p><a>Wholesome Mains</a></p>
+          <p class="relative xl:right-0 lg:right-0 md:right-20 sm:right-8 right-3"><a>Wholesome Mains</a></p>
         </div>
-        <div class="pt-10 pl-10">
-          <img class="pb-6 w-60
-          xl:h-60 lg:h-56 md:h-48 h-full
-          xl:w-55 lg:w-56 md:w-56 w-full" 
+        <div class="pt-10 pl-10 w-1/2 relative xl:bottom-0 lg:bottom-0 bottom-10 
+        xl:pr-0 lg:pr-0 pr-20">
+          <img class="pb-6 w-60 
+          xl:h-60 lg:h-56 h-72
+          xl:w-55 lg:w-56 w-72" 
           src="./assets/images/6.jpeg">
-          <p><a>Sweet Endings</a></p>
+          <p class="pr-3"><a>Sweet Endings</a></p>
         </div>
       </div>
 
