@@ -37,7 +37,7 @@
 
 <body>
 
-  <main class="h-full w-full items-center text-center">
+  <main class="h-full w-full items-center text-center overflow-hidden">
 
     <!-- Landing Page -->
     <section id="landing-page" class="w-full h-screen">
@@ -51,7 +51,7 @@
       </button>
       
       <!-- Dropdown Navigation Menu -->
-      <ol onmouseover="showNavOptions('show')" onmouseleave="showNavOptions('hide')"
+      <ol id="nav-list" onmouseover="showNavOptions('show')" onmouseleave="showNavOptions('hide')"
         class="hide text-white relative w-28 2xl:left-16 xl:left-16 lg:left-16 md:left-16 sm:left-12 left-12 rounded-xl top-32 h-44 z-10 p-4 font-bold text-xl">
         <li class="cursor-pointer pt-2"><a href="#about">About</a></li>
         <li class="cursor-pointer pt-2"><a href="#menu">Menu</a></li>
@@ -158,7 +158,7 @@
 
     <!-- Reviews -->
     <section id="reviews" 
-    class="bg-black w-full text-white pt-8 pb-6 pr-2 z-0 overflow-hidden text-center
+    class="bg-black w-full text-white pt-8 pb-6 pr-2 z-0 text-center
     2xl:h-screen xl:h-screen lg:h-screen md:h-full h-full">
       <h1 class="font-Hammersmith One text-7xl pt-3 pb-6">Customer Reviews</h1>
      
@@ -222,26 +222,29 @@
 
     <!-- Footer -->
     <footer id="footer" 
-    class="bg-yellow-100 flex-row pt-4 h-full
+    class="bg-yellow-100 flex-row p-4 h-full
     2xl:flex xl:flex lg:flex md:flex block">
 
       <!-- Restaurant Social Media -->
-      <div id="restaurant-social-media" class="2xl:w-1/3 xl:w-1/3 lg:w-1/3 md:1/3 w-full">
-        <p class="text-3xl font-bold p-4">Contact Us</p>
+      <div id="restaurant-social-media" 
+        class="2xl:w-1/3 xl:w-1/3 lg:w-1/3 md:1/3 w-full
+        h-full">
+        <p class="text-3xl font-bold p-4">Contact</p>
+        <p class="pb-1">Follow our Social Media and leave a review</p>
         <div class="flex flex-row">
-          <div class="w-1/4 p-6">
+          <div class="w-1/4 2xl:p-6 xl:p-6 lg:p-4 md:p-2 p-6 pt-7">
             <button onclick="window.open('https://www.facebook.com/jiapoporkrice/')">
               <img src="assets/images/icons/1.png"
               class="w-16">
             </button>
           </div>
-          <div class="w-1/4 p-6">
+          <div class="w-1/4 2xl:p-6 xl:p-6 lg:p-4 md:p-2 p-6 pt-7">
             <button onclick="window.open('https://www.instagram.com/jiapoporkrice/')">
               <img src="assets/images/icons/2.png"
               class="w-16">
             </button>
           </div>
-          <div class="w-1/4 p-6">
+          <div class="w-1/4 2xl:p-6 xl:p-6 lg:p-4 md:p-2 p-6 pt-7">
             <button onclick="window.open('https://goo.gl/maps/p48fjghhQB28WS5k8')">
               <img src="assets/images/icons/3.png"
               class="w-16">
@@ -250,7 +253,8 @@
           <div class="w-1/4 pb-6">
             <button onclick="window.open('tel:+88632872305/')">
               <img src="assets/images/icons/4.png" 
-              class="w-16 pt-6">
+              class="2xl:p-6 xl:p-6 lg:p-4 md:p-2 
+              md:w-full w-16 md:pt-2 pt-8 ">
             </button>
           </div>
         </div>
@@ -261,53 +265,52 @@
       class="2xl:w-1/3 xl:w-1/3 lg:w-1/3 md:1/3 w-full">
         <p class="text-3xl font-bold p-4">Navigation</p>
         <div class="flex flex-row pb-2 underline font-bold pt-2 pb-4">
-          <div class="w-1/2">
-            <p><a href="#about">About</a></p>
-            <p><a href="#menu">Menu</a></p>
-            <p><a href="tel:+88632872305/">Contact Us</a></p>
-            <p><a href="#reviews">Reviews</a></p>
-          </div>
-          <div class="w-1/2">
-            <p><a href="https://www.opentable.com.tw/restaurant/profile/188282?ref=18649">Dining</a></p>
-            <p><a href="https://line.me/R/ti/p/@877hucrs">Linepay</a></p>
-            <p><a href="https://www.ubereats.com/tw/store/%E5%A7%90%E5%A9%86jiapo/PYrgyX6AS9CA1mDer2lFDw">Ubereats</a>
-            </p>
-            <p><a href="https://www.foodpanda.com.tw/en/restaurant/y1xt/jie-po-jiapo">Food Panda</a></p>
-          </div>
+          <ul class="w-1/2 text-red-600 hover:text-blue-600">
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="tel:+88632872305/">Contact Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+          <ul class="w-1/2 text-blue-600 hover:text-red-600">
+            <li><a href="https://www.opentable.com.tw/restaurant/profile/188282?ref=18649">Dining</a></li>
+            <li><a href="https://line.me/R/ti/p/@877hucrs">Linepay</a></li>
+            <li><a href="https://www.ubereats.com/tw/store/%E5%A7%90%E5%A9%86jiapo/PYrgyX6AS9CA1mDer2lFDw">Ubereats</li>
+            </li>
+            <li><a href="https://www.foodpanda.com.tw/en/restaurant/y1xt/jie-po-jiapo">Food Panda</a></li>
+          </ul>
         </div>
-        <p class="text-grey-500">©Jiapo
-          <script>document.write(new Date().getFullYear())</script>
-        </p>
       </div>
 
       <!-- Developer Information -->
       <div id="developer-info" 
-      class="2xl:w-1/3 xl:w-1/3 lg:w-1/3 md:1/3 w-full">
-        <p class="text-3xl font-bold p-4">About This Website</p>
-        <p>Designed and Created by Robert Pether</p>
+      class="2xl:w-1/3 xl:w-1/3 lg:w-1/3 md:1/3 w-full p-2 pl-4">
+        <p class="text-3xl font-bold p-4">Designer</p>
+        <p>Designed by Pether Digital Studios</p>
         <div class="flex flex-row">
-          <div class="w-1/3 p-10">
+          <div class="w-1/3 pt-7">
             <button onclick="window.open('mailto:rpether@hotmail.com')">
               <img src="assets/images/icons/5.png"
-              class="w-16 pt-2">
+              class="2xl:w-16 xl:w-16 lg:w-16 md:w-16 w-16">
             </button>
           </div>
-          <div class="w-1/3 p-10">
+          <div class="w-1/3 pt-5">
             <button onclick="window.open('https://www.linkedin.com/in/robert-pether-ba9968113')">
               <img src="assets/images/icons/6.png"
-              class="w-16">
+              class="2xl:w-16 xl:w-16 lg:w-16 md:w-16 w-16">
             </button>
           </div>
-          <div class="w-1/3 p-10">
+          <div class="w-1/3 pt-5">
             <button onclick="window.open('https://github.com/rpet064/')">
               <img src="assets/images/icons/7.png"
-              class="w-16">
+              class="2xl:w-16 xl:w-16 lg:w-16 md:w-16 w-16">
             </button>
             <div>
             </div>
           </div>
     </footer>
-
+    <p class="bg-yellow-100 pb-4">©Jiapo
+      <script>document.write(new Date().getFullYear())</script>
+    </p>
   </main>
   <script>
     // This script toggles between showing and hiding the nav bar on the hero page
@@ -315,9 +318,9 @@
     // Mouseoff the menu or pork will close the menu
     function showNavOptions(navDisplay) {
       if (navDisplay === "show") {
-        $("ol").show()
+        $("#nav-list").show()
       } else {
-        $("ol").hide()
+        $("#nav-list").hide()
       }
     }
   </script>
@@ -337,7 +340,7 @@
     // hides the modal and nav-menu, on reload/refresh
     window.onload = function () {
       $("#menu-modal").hide()
-      $("ol").hide()
+      $("nav-list").hide()
     }
   </script>
   <script>
