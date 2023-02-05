@@ -14,10 +14,10 @@
   <!-- Mandarin website information -->
 
   <!-- favicon links -->
-  <link rel="shortcut icon" href="/images/favicon/favicon.ico" sizes="any" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" color="white" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" color="white" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
 
   <!-- Google  Fonts -->
   <link
@@ -112,33 +112,57 @@
       xl:flex lg:flex block xl:h-screen lg:h-screen h-full
       2xl:p-10 xl:p-10 lg:p-10 md:p-10"
       id="menu">
-      <div class="xl:w-1/2 lg:w-1/2 w-full flex flex-row sm:p-5 p-5 xl:pt-10 lg:pt-10 md:pt-10 sm:pt-10 pt-16">
+
+      <!-- Menu Row One -->
+      <div class="flex flex-row sm:p-5 p-5
+        xl:pt-10 lg:pt-10 md:pt-10 sm:pt-10 pt-16
+        xl:w-1/2 lg:w-1/2 w-full">
+        
         <div 
-        class="xl:w-72 lg:w-60 pr-10 w-1/2 xl:pt-0 
-          lg:pt-0 md:pt-7 sm:pt-5">
-          <p class="text-4xl pb-4 pr-2">Delightful Hakka Flavours</p>
-          <p>Sed nec mauris egestas, tincidunt urna nec, vestibulum sem. Aenean et fermentum metus.</p>
-          <button id="menu-modal-btn" class="bg-red-600 rounded-md w-32 h-16 mt-8 text-white hover:bg-blue-700"
+          class="xl:w-68 lg:w-54 w-1/2 pr-10 xl:pt-0 
+          lg:pt-0 md:pt-7 sm:pt-5
+          2xl:pl-0 xl:pl-0 lg:pl-0 md:pl-1 sm:pl-1 pl-6">
+          <p 
+          class="pb-4 pr-2  
+          2xl:text-4xl xl:text-4xl lg:text-3xl text-3xl font-bold"
+          >Delightful Hakka Flavours</p>  
+          <p class="2xl:text-base xl:text-base lg:text-base md:text-base sm:text-base text-sm"
+          >Sed nec mauris egestas, tincidunt urna nec, vestibulum sem. Aenean et fermentum metus.</p>
+          <button id="menu-modal-btn" 
+            class="bg-red-600 rounded-md w-28 h-14 mt-8 text-white hover:bg-blue-700"
             onclick="manageModal('show')">Menu</button>
         </div>
-        <div class="xl:pt-10 xl:pr-10 lg:pt-10 lg:pr-10 w-1/2">
+
+        <div 
+          class="w-1/2 xl:pt-10 xl:pr-10 lg:pt-10 
+          2xl:pl-2 xl:pl-2 lg:pl-2 pl-4">
           <img class="pb-6 
-          xl:w-72 lg:w-72 lg:h-56 h-3/4" 
+          lg:h-56 h-3/4" 
           src="./assets/images/4.jpg">
-          <p class="pr-6"><a>Mouthwatering Appertisers</a></p>
+          <p 
+          class="2xl:pr-0 xl:pr-0 lg:pr-0 md:pr-16 sm:pr-12 pr-0"> 
+            <a>Mouthwatering Appertisers</a>
+          </p>
         </div>
       </div>
+
+      <!-- Menu Row Two -->
       <div class="xl:w-1/2 lg:w-1/2 w-full flex flex-row 
-      xl:pr-10 lg:pr-0 pt-10">
-        <div class="xl:pt-10 xl:pr-10 lg:pt-10 lg:pr-10 w-1/2">
+        xl:pr-10 lg:pr-0 pt-10">
+        
+      <div class="xl:pt-10 xl:pr-10 lg:pt-10 lg:pr-10 w-1/2">
           <img class="pb-6
-          xl:w-72 lg:w-72 md:w-72 sm:w-68 w-64 xl:h-60 lg:h-56 h-72" 
+          xl:w-72 lg:w-72 md:w-72 sm:w-68 w-64 
+          xl:h-60 lg:h-56 h-72" 
           src="./assets/images/5.jpeg">
-          <p class="relative xl:right-0 lg:right-0 md:right-20 sm:right-8 right-3"><a>Wholesome Mains</a></p>
+          <p class="relative xl:right-0 lg:right-0 md:right-20 sm:right-8 right-2"><a>Wholesome Mains</a></p>
         </div>
-        <div class="pt-10 pl-10 w-1/2 relative xl:bottom-0 lg:bottom-0 bottom-10 
-        xl:pr-0 lg:pr-0 pr-20">
-          <img class="pb-6 w-60 
+
+        <div class="pt-10 w-1/2 relative 
+          2xl:bottom-0 xl:bottom-0 lg:bottom-0 bottom-10 
+          2xl:pr-0 xl:pr-0 lg:pr-0 md:pr-24 sm:pr-24 pr-10 
+          2xl:pl-10 xl:pl-10 lg:pl-10 md-pl-0 pl-5">
+          <img class="pb-6 
           xl:h-60 lg:h-56 h-72
           xl:w-55 lg:w-56 w-72" 
           src="./assets/images/6.jpeg">
@@ -223,7 +247,8 @@
     <!-- Footer -->
     <footer id="footer" 
     class="bg-yellow-100 flex-row p-4 h-full
-    2xl:flex xl:flex lg:flex md:flex block">
+    2xl:flex xl:flex lg:flex md:flex block
+    2xl:pb-0 xl:pb-0 lg:pb-0 md:pb-0 pb-4">
 
       <!-- Restaurant Social Media -->
       <div id="restaurant-social-media" 
