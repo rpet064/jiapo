@@ -46,7 +46,7 @@
       <img src="./assets/images/1.jpg" class="object-cover w-full h-full absolute" alt="Image alt text" />
       <button id="logo-btn" class="absolute mt-8 w-64 z-20 ml-3 cursor-none
       2xl:left-12 xl:left-12 lg:left-12 md:left-12 sml:left-12 left-8">
-        <img src="./assets/images/2.png" class="object-cover w-1/2 h-1/2 transform hover:rotate-90 cursor-pointer"
+        <img type="button" src="./assets/images/2.png" class="object-cover w-1/2 h-1/2 transform hover:rotate-90 cursor-pointer"
           alt="Image alt text" onmouseover="showNavOptions('show')" onmouseleave="showNavOptions('hide')" />
       </button>
       
@@ -348,7 +348,6 @@
     // Mouseoff the menu or pork will close the menu
     function showNavOptions(navDisplay) {
       if (navDisplay === "show") {
-        $("#menu-modal").hide()
         $("#nav-list").show()
       } else {
         $("#nav-list").hide()
@@ -360,7 +359,6 @@
     // Clicking off the modal will close the modal
     function manageModal(modalDisplay) {
       if (modalDisplay === "show") {
-        $("#menu-modal").hide()
         $("#menu-modal").show()
       } else {
         $("#menu-modal").hide()
@@ -372,7 +370,7 @@
     // hides the modal and nav-menu, on reload/refresh
     window.onload = function () {
       $("#menu-modal").hide()
-      $("nav-list").hide()
+      $("#nav-list").hide()
     }
   </script>
   <script>
