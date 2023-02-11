@@ -125,13 +125,16 @@
       2xl:p-10 xl:p-10 lg:p-10 p-8" >
 
       <!-- Menu Modal -->
-      <div id="menu-modal" class="w-vw h-100vh absolute t-0 l-0 r-0 b-0 z-50">
+      <div id="menu-modal" class="h-100vh absolute t-0 r-0 l-0 b-0 z-50">
         <div id="menu-modal-main" 
-          class="pt-24 pb-10 pr-14 pl-10 bg-white relative border-2 shadow-2xl xl:t-20 w-full
-          2xl:bottom-48 xl:bottom-48 lg:bottom-48 bottom-full md:top-20 h-full
-          2xl:left-20 xl:left-20 lg:left-20 md:right-20 sm:right-10 right-10">
+          class="pb-10 pr-10 pl-10 bg-white relative border-2 shadow-2xl h-full
+          2xl:top-16 xl:top-16 lg:top-0
+          2xl:left-12 xl:left-12 left-0
+          2xl:pt-24 xl:pt-24 lg:pt-24 pt-0
+          w-full">
           
-        <span class="float-right relative bottom-32 left-6 text-7xl font-bold my-10 cursor-pointer"
+        <span class="float-right relative left-2 text-7xl font-bold my-10 cursor-pointer
+          xl:bottom-32 lg:bottom-32 bottom-0"
             onclick="manageModal('close')">&times;</span>
           <img src="./assets/images/7.jpeg">
         </div>
@@ -373,7 +376,11 @@
     // Clicking off the modal will close the modal
     function manageModal(modalDisplay) {
       if (modalDisplay === "show") {
-        $("#menu-modal").show()
+        if ($( window ).width() < 800){
+          window.open("https://www.facebook.com/photo?fbid=920002638691755&set=pcb.920002672025085")
+        } else {
+          $("#menu-modal").show()
+        }
       } else {
         $("#menu-modal").hide()
       }
