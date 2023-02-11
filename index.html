@@ -37,10 +37,10 @@
 
 <body>
 
-  <main class="h-full w-full items-center text-center overflow-hidden">
+  <main class="h-full w-full items-center text-center ">
 
     <!-- Landing Page -->
-    <section id="landing-page" class="w-full h-screen">
+    <section id="landing-page" class="w-full h-screen ">
 
       <!-- Change Languages Button -->
       <button id="change-lang" title="Change Language" onclick='window.location.assign("./english.html")'
@@ -89,7 +89,7 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="bg-red-1 flex-row bg-meal w-full p-16 border-b-2
+    <section id="about" class="bg-red-1 flex-row bg-meal w-full p-16 border-b-2 
       2xl:flex xl:flex lg:flex block
       2xl:h-screen xl:h-screen lg:h-full p-16 border h-full block
       ">
@@ -116,18 +116,19 @@
 
     <!-- Menu -->
     <section id="menu"
-      class="flex-row w-full border-b-2 items-center h-full
+      class="flex-row w-full border-b-2 items-center h-full 
       xl:flex lg:flex block xl:h-screen lg:h-screen
       2xl:space-x-10 xl:space-x-10 lg:space-x-10
       2xl:p-10 xl:p-10 lg:p-10 p-8" >
 
       <!-- Menu Modal -->
-      <div id="menu-modal" class="w-full h-full absolute t-0 l-0 r-0 b-0 z-50">
-        <div id="menu-modal-main" class="p-6 bg-white relative border-2 shadow-2xl xl:t-20 
-        2xl:bottom-48 xl:bottom-48 lg:bottom-48 bottom-full md:top-20 h-full
-        2xl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/4 sm:w-5/5 w-5/5
-        2xl:left-14 xl:left-14 lg:left-14 md:right-20 sm:right-10 right-10">
-          <span class="float-right text-7xl font-bold pb-5 pr-4 cursor-pointer"
+      <div id="menu-modal" class="w-vw h-100vh absolute t-0 l-0 r-0 b-0 z-50">
+        <div id="menu-modal-main" 
+          class="pt-24 pb-10 pr-14 pl-10 bg-white relative border-2 shadow-2xl xl:t-20 w-full
+          2xl:bottom-48 xl:bottom-48 lg:bottom-48 bottom-full md:top-20 h-full
+          2xl:left-20 xl:left-20 lg:left-20 md:right-20 sm:right-10 right-10">
+          
+        <span class="float-right relative bottom-32 left-6 text-7xl font-bold my-10 cursor-pointer"
             onclick="manageModal('close')">&times;</span>
           <img src="./assets/images/7.jpeg">
         </div>
@@ -185,7 +186,7 @@
     </section>
 
     <!-- Reviews -->
-    <section id="reviews" class="bg-black w-full text-white pt-8 pb-6 pr-2 z-0 text-center
+    <section id="reviews" class="bg-black w-full text-white pt-8 pb-6 pr-2 z-0 text-center 
     2xl:h-screen xl:h-screen lg:h-screen md:h-full h-full">
       <h1 class="font-Hammersmith One text-7xl pt-3 pb-6">Customer Reviews</h1>
 
@@ -248,9 +249,10 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer" class="bg-yellow-100 flex-row p-4 h-full
-    2xl:flex xl:flex lg:flex md:flex block
-    2xl:pb-0 xl:pb-0 lg:pb-0 md:pb-0 pb-4">
+    <footer id="footer" 
+      class="bg-yellow-100 flex-row p-4 h-full 
+      2xl:flex xl:flex lg:flex md:flex block
+      2xl:pb-0 xl:pb-0 lg:pb-0 md:pb-0 pb-4">
 
       <!-- Restaurant Social Media -->
       <div id="restaurant-social-media" 
