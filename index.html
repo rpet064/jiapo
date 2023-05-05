@@ -52,11 +52,11 @@
       
       <button id="logo-btn" 
         class="absolute mt-2 z-20 ml-2
-        2xl:left-4 xl:left-4 lg:left-4 md:left-4 sml:left-4 left-0
-        2xl:w-64 xl:w-64 lg:w-64 md:w-64 sm:w-60 w-52">
+        2xl:left-4 xl:left-4 lg:left-4 md:left-4 sml:left-4 left-0s
+        2xl:w-64 xl:w-64 lg:w-64 md:w-64 sm:w-60 w-52 bg:none">
 
       <img type="button" src="./assets/images/2.png" title="菜單"
-          class="object-cover w-1/2 h-1/2 transform hover:rotate-90 cursor-pointer" 
+          class="object-cover w-1/2 h-1/2 transform hover:rotate-90 cursor-pointer bg:none" 
           alt="之前有豬肉的照片"
           onmouseover="showNavOptions('show')" onmouseleave="showNavOptions('hide')" />
       </button>
@@ -402,7 +402,7 @@
     // that triggers the modal, or hovering the main part of the modal
     // The length != 0 is for tablet users
     $(document).click(function () {
-      if (!$("#menu-modal-main:hover").length != 0 && !$("#menu-modal-btn:hover").length != 0) {
+      if (!$("#menu-modal-main:hover").length != 0) {
         $("#menu-modal").hide()
       }
     })
