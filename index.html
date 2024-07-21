@@ -61,8 +61,7 @@
       <button id="logo-btn" 
         class="absolute mt-2 z-20 ml-2
         2xl:left-4 xl:left-4 lg:left-4 md:left-4 sml:left-4 left-0
-        2xl:w-64 xl:w-64 lg:w-64 md:w-64 sm:w-60 w-52">
-
+        2xl:w-52 xl:w-52 lg:w-52 md:w-52 sm:w-48 w-44">
       <img id="logo" type="button" src="https://jiapobucket.s3.amazonaws.com/2.png" title="菜單"
           class="object-cover w-1/2 h-1/2 transform hover:rotate-90 cursor-pointer " 
           alt="之前有豬肉的照片"
@@ -71,9 +70,9 @@
 
       <!-- Dropdown Navigation Menu -->
       <ol id="nav-list" onmouseover="showNavOptions('show')" onmouseleave="showNavOptions('hide')"
-        class="hide text-white relative w-28 rounded-xl h-44 z-10 p-2 font-bold
+        class="hide text-white relative w-28 rounded-xl h-44 z-10 p-1 font-bold
         2xl:left-6 xl:left-6 lg:left-6 md:left-2 sm:left-2
-        2xl:top-28 xl:top-28 lg:top-28 md:top-28 sm:top-28 top-24
+        2xl:top-24 xl:top-24 lg:top-24 md:top-24 sm:top-24 top-20
         2xl:text-xl xl:text-xl lg:text-xl md:text-xl text-lg">
         
         <li class="cursor-pointer pt-2 hover:text-red-700"><a href="#about">關於</a></li>
@@ -105,9 +104,7 @@
 
     <!-- About -->
     <section id="about" class="bg-red-1 flex-row bg-meal w-full p-16 border-b-2 
-      2xl:flex xl:flex lg:flex block
-      2xl:h-screen xl:h-screen lg:h-full p-16 border h-full block
-      ">
+      2xl:flex xl:flex lg:flex block">
       <div class="2xl:w-2/5 xl:w-2/5 lg:w-3/5 h-full w-full">
         <img src="https://jiapobucket.s3.amazonaws.com/3.jpg" alt="Restaurant Photo Was Here" class="4/5 pt-5" />
       </div>
@@ -117,10 +114,8 @@
         2xl:text-7xl xl:text-7xl lg:text-6xl md:text-6xl text-6xl
         2xl:pt-1 xl:pt-1 lg:pt-1 pt-12">姐婆的故事</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Pellentesque sodales quam purus, ut pharetra elit pellentesque et.
-          Aenean et fermentum metus. Quisque scelerisque urna quis ipsum malesuada,
-          eget sodales tortor aliquet. Sed nec mauris egestas, tincidunt urna nec, vestibulum sem.
+          Jiapo，位於桃園的這家深受當地人和遊客喜愛的餐廳，以其美味的客家豬肉飯、令人垂涎的麻糬和芳香的咖啡而聞名。
+          这家家族經營的餐廳不僅僅是提供食物；更是一場慶祝客家文化和傳統的盛宴，這些都是代代相傳的家庭食譜。
         </p>
         <button onclick="window.open('https://line.me/R/ti/p/@877hucrs')" title="點餐"
           class="bg-red-600 rounded-md w-32 h-16 mt-8 text-white hover:bg-blue-700 tracking-wide font-bold"
@@ -132,8 +127,7 @@
     <!-- Menu -->
     <section id="menu"
       class="flex-row w-full border-b-2 items-center
-      xl:flex lg:flex block xl:h-screen lg:h-screen
-      2xl:space-x-12 xl:space-x-12 lg:space-x-6
+      xl:flex lg:flex block 2xl:space-x-12 xl:space-x-12 lg:space-x-6
       2xl:p-8 xl:p-8 lg:p-10 p-8">
 
       <!-- Menu Modal -->
@@ -141,8 +135,7 @@
         <div id="menu-modal-main" 
           class=" pr-10 pl-10 bg-white relative border-2 shadow-2xl w-full
           2xl:top-16 xl:top-16 lg:top-0
-          2xl:left-12 xl:left-12 left-0
-          ">
+          2xl:left-12 xl:left-12 left-0">
           
         <span class="float-right relative left-2 text-7xl font-bold my-10 cursor-pointer
           xl:bottom-10 lg:bottom-10 bottom-6"
@@ -159,9 +152,6 @@
         <p class="font-bold
           2xl:text-5xl xl:text-5xl lg:text-3xl text-4xl"
           >尋找客家美食</p>
-        <p class="p-6"
-          >Sed nec mauris egestas, tincidunt urna nec, vestibulum sem.
-        </p>
         <button id="menu-modal-btn" title="菜單"
           class="bg-red-600 rounded-md w-32 h-14 my-4 text-white hover:bg-blue-700 tracking-wide font-bold"
           onclick="manageModal('show')">菜單</button>
